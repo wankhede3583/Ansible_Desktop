@@ -1,16 +1,16 @@
 ---
-  hosts: all
-  become: yes
-  taks:
-    - name: install webserver on debain node only
-      apt:
-        name: apache2
-        state: present
-      when: ansible_os_family == "Debian"
+  - hosts: all
+    become: yes
+    taks:
+      - name: install webserver on debain node only
+        apt:
+          name: apache2
+          state: present
+        when: ansible_os_family == "Debian"
 
-    - name: install webserver on redhat node only
-      apt:
-        name: httpd
-        state: present
-      when: ansible_os_family == "redhat"
+      - name: install webserver on redhat node only
+        apt:
+          name: httpd
+          state: present
+        when: ansible_os_family == "redhat"
       
