@@ -1,0 +1,10 @@
+---
+  - hosts: 172.31.21.222
+    become: yes
+    tasks:
+      - name: I want to execute linux command directly
+        command: hostname
+        register: myresult
+      - name: I want to disply myresult
+        debug:
+          msg: "{{myresult}}"
