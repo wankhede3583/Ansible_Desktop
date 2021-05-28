@@ -8,3 +8,16 @@
       - name: I want to disply myresult
         debug:
           msg: "{{myresult}}"
+
+      - name: I want to install git
+        apt:
+          name: git
+          state: present
+        when: myresult.stderr == ""
+
+
+      - name: I want to insatll tree
+        apt:
+          name: tree
+          state: present
+        when: myresult.stderr != ""
