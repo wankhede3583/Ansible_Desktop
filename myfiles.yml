@@ -8,3 +8,7 @@
       name: apache2
       state: present
 
+  - name: I want to start webserver on ubuntu node
+  - service:
+      name: apache2
+      state: restarted
