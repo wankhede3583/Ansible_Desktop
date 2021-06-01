@@ -1,2 +1,5 @@
 ---
 # tasks file for mytomcat8role
+
+# Step 1: Install Java
+- include_tasks: myjava.yml
