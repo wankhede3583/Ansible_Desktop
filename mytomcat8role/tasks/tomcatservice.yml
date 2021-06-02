@@ -1,0 +1,6 @@
+---
+
+- name: create the systemd service file on ansible nodes
+  template: 
+    src: tamplates/mytomservice.j2
+    path: /etc/systemd/system/tomcat.service

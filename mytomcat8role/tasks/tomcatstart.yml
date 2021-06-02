@@ -1,0 +1,12 @@
+---
+
+- name: tomcat demon reload
+  systemd:
+    daemon_reload: yes
+    name: tomcat
+
+- name: tomcat start
+  systemd:
+    name: tomcat
+    state: started
+    enabled: true

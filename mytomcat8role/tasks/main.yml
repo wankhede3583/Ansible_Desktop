@@ -1,5 +1,22 @@
 ---
 # tasks file for mytomcat8role
 
-# Step 1: Install Java
+# Step 1: Install Java - myjava.yml
+# Step 2: Create Tomcat User and group - createusergroup.yml
+# Step 3: Download Install Tomcat - download.yml
+# Step 3.1: extract files to folder - extract.yml
+# Step 4: Update Permissions - Permission.yml 
+# Step 5: Create a systemd Service File - tomcatservice.yml
+# Step 5.1: Start the Tomcat service - tomcatstart.yml
+# Step 7: Configure Tomcat Web Management Interfaceb - tomcatuser.yml
+# Step 8: - tomcatrestart.yml
+
 - include_tasks: myjava.yml
+- include_tasks: createusergroup.yml
+- include_tasks: download.yml
+- include_tasks: extract.yml
+- include_tasks: Permission.yml 
+- include_tasks: tomcatservice.yml
+- include_tasks: tomcatstart.yml
+- include_tasks: tomcatuser.yml
+- include_tasks: tomcatrestart.yml
