@@ -10,6 +10,7 @@
 # Step 5.1: Start the Tomcat service - tomcatstart.yml
 # Step 7: Configure Tomcat Web Management Interfaceb - tomcatuser.yml
 # Step 8: - tomcatrestart.yml
+# Step 9: write playbook for deploy app as per your requirement
 
 - include_tasks: myjava.yml
 - include_tasks: createusergroup.yml
