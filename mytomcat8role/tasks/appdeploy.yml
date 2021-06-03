@@ -1,7 +1,7 @@
 ---
 - name: deploy jenkins
   get_url: 
-    url: https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/2.289.1/jenkins.war
+    url: https://get.jenkins.io/war-stable/2.289.1/jenkins.war
     dest:  /opt/tomcat/webapps/
     force_basic_auth: yes
 
