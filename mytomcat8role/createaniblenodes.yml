@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: create ansible ubuntu nodes
+      ec2:
+        key_name: Training_Server_Keypair
+        instance_type: t2.micro 
+        image: ami-043507e33905fa7cc
+        wait: yes
+        group: LAMP
+        region: us-east-2
+        count: 2
+        vpc_subnet_id: subnet-14ab4169
+        assign_public_ip: yes
+        instance_tags:
+        Name: myAnsibleUbuntuNode
+        
