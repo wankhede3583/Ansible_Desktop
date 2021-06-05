@@ -9,7 +9,7 @@
       image: ami-043507e33905fa7cc
       wait: yes
       group: LAMP
-      region: us-east-2
+      region: us-east-2b
       count: 2
       vpc_subnet_id: subnet-14ab4169
       assign_public_ip: yes
