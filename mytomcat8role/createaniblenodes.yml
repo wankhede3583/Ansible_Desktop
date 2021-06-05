@@ -4,8 +4,8 @@
   tasks: 
   - name: create ansible ubuntu nodes
     ec2:
-      aws_access_key: AKIAXKEI76QGVS3BLJ5R
-      aws_secret_key: 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
+     # aws_access_key: AKIAXKEI76QGVS3BLJ5R
+     # aws_secret_key: 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
       key_name: Training_Server_Keypair
       instance_type: t2.micro
       image: ami-043507e33905fa7cc
