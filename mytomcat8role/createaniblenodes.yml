@@ -8,11 +8,11 @@
      # aws_secret_key: ARNu9Np93uNEC7BTRG2vI0R5PvpF7ndOrmHj21WV
       key_name: Training_Server_Keypair
       instance_type: t2.micro
-      image: ami-043507e33905fa7cc
+      image: ami-03fe365c2073ba104
       wait: yes
       group: LAMP
-      region: us-east-2b
-      count: 2
+      region: us-east-2
+      count: 2 
       vpc_subnet_id: subnet-14ab4169
       assign_public_ip: yes
       instance_tags:
